@@ -22,6 +22,8 @@ export function createShoppingCart() {
      */
     function getTotalPrice() {
         // 請在此處寫下你的程式碼
+        const res = items.reduce((acc, cur) => acc + cur.price, 0);
+        return res;
     }
 
     function getItemCount() {
